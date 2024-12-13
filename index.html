@@ -19,20 +19,27 @@
 
 <body>
   <header>
-  <div class="header">
-    <img class="logo" src="/logo/Booki.png" alt="photo logo Booki">
-    <nav>
-    <ul class="heta">      
-        <li><a href="#Hebergements" class="Hébergements" >Hébergements</a></li>
-       <li><a href="#Activites"  class="Activités">Activités</a></li></ul> 
-    </nav>
-  </div>
+    <div class="header">
+      <!-- Logo au-dessus -->
+      <div class="logo-container">
+        <img class="logo" src="/logo/Booki.png" alt="photo logo Booki">
+      </div>
+  
+      <!-- Navigation en dessous -->
+      <nav class="navigation">
+        <ul class="heta">
+          <li><a href="#Hebergements" class="hebergements nav-link">Hébergements</a></li>
+          <li><a href="#Activites" class="Activités nav-link">Activités</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
 
 
 
 <h1 class="h1"><b>Trouvez Votre Hébergement pour des vacances de rêve</b> </h1> 
 <p class="nature">En plein centre-ville ou en plein nature</p>
-</header>
 
 <div class="Rechercher">
 
@@ -197,7 +204,7 @@
     <div>
       <h4 class="titre" >Les plus populaires</h4>
     </div>
-    <div>
+    <div class="signe">
       <i class="fas fa-chart-line"></i>
     </div>
   </div>
