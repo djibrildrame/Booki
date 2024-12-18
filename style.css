@@ -4,6 +4,10 @@ body {
 
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a{
   text-decoration: none;
 }
@@ -37,6 +41,7 @@ input::placeholder {
   color: #333; /* Couleur du placeholder */
   font-weight: bold; /* Font-weight du placeholder */
   left: 10%;
+  font-size: 16px;
   
 }
 
@@ -46,7 +51,6 @@ input::placeholder {
   text-decoration: none;
   color: #000000;
 
-position: relative;
   padding: 20px;
 }
 
@@ -73,29 +77,30 @@ h1 {
 .Rechercher {
   display: flex;
   justify-content: left;
-  margin-left: 30px;
-  margin-right: 1030px;
-  border-bottom: 70px;
-  padding: 10px;
+  align-items: center;
+  max-width: 44px; /* Fixez une largeur maximale adaptée */
+  margin-left: 2%;
+  border: 1px solid #ddd; /* Ligne pour délimiter */
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding-left: 11px;
   background-color: #F2F2F2;
+  box-sizing: border-box; /* Assure que padding et largeur totale soient gérés correctement */
+
+}
+
+.Rechercher .fa-location-dot{
+  margin-left: 43%;
 }
 
 .fa-location-dot {
-  position: relative;
   margin-right: 20px;
   margin-left: 10%;
 
 }
 
 .button {
-  position: absolute;
-  height: 40px;
+  height: 45px;
   width: 111px;
-  margin-left: 178px;
-  margin-top: -11.9px;
   border-radius: 10px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -103,15 +108,17 @@ h1 {
   color: white;
   border: none;
   font-size: 17px;
+  margin-left: 11%;
 }
 
 input {
-  position: absolute;
   height: 35px;
-  width: 172px;
-border:1px solid #d9d9d9;
-      margin-top: -10.4px;
+  width: 195px;
+  border:1px solid #d9d9d9;
   color: black;
+  margin-left: 5.7%;
+  padding: 21px 15px;
+  border-radius: 0%;
 
 }
 
@@ -147,7 +154,7 @@ border:1px solid #d9d9d9;
     gap: 10px; /* Espacement entre icône et texte */
     border: 2px solid #d9d9d9;
     border-radius: 30px;
-    padding: 10px 20px; /* Ajuste l'espace intérieur */
+    padding: 13px 69px;
     max-width: 110px; /* Limite la largeur maximum */
     width: auto; /* Ajuste à la taille du contenu */
     background-color: white;
@@ -156,10 +163,19 @@ border:1px solid #d9d9d9;
 
   }
 
+  .article{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
   .fa-money-bill-wave, .fa-person, .fa-heart, .fa-fire{
     color: #0065fc;
   }
 
+  .fa-person{
+    font-size: 20px;
+  }
 
 /* hébergement proposé à la clientèle*/
 
@@ -273,12 +289,11 @@ h4{
 .hotel1{
   margin-left: 2.5;
   padding: 10px;
-  padding-bottom:120px;
   border-radius: 20px;
   border: 1px solid #F2F2F2;
   background: #F2F2F2;
 flex-direction: row;
-width: 68%;
+width: 78%;
 padding-top: 4%;
  
 }
@@ -435,10 +450,10 @@ background-color: white;
 .container-soleil{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: -1%;
+  margin-top: -2%;
   
 }
 
@@ -479,12 +494,11 @@ background-color: white;
   
 }
 
-.titre1{
+.titre1 {
   font-size: 20px;
   font-weight: 900;
-  margin-left: 3%;
-  margin-top: -2%;
- position: absolute;
+  margin-left: 4%;
+  margin-top: -4%;
 }
 
 .soleil1{
@@ -551,7 +565,6 @@ margin-right: -135px;
 }
 
 .hk7 {
-  position: absolute;
   margin-top: -543px;
   margin-left: 930px;
   font-size: 20px;
@@ -567,7 +580,6 @@ margin-right: -135px;
 .afficher {
   margin-left: 40px;
  margin-top: 38px;
- position: absolute;
  font-size: 17px;
  font-weight: bold;
 }
@@ -614,12 +626,10 @@ p:hover{
   margin-left: 15px;
   margin-top: -13px;
  margin-bottom: 0px;
- position: absolute;
  color: #0065fc;
 }
 
 .etoile4{
-  position: absolute;
   margin-top: -13px;
   margin-left: 15px;
   color: #0065fc;
@@ -630,7 +640,6 @@ p:hover{
 }
 
 h8{
-  position: absolute;
   margin-left: 65px;
   margin-top: -40px;
   font-size: 20px;
@@ -672,7 +681,6 @@ h8{
 }
 
 .act {
-  position: relative;
 margin-top: -35px;
 margin-left: 50px;
 font-weight: 900;
@@ -700,7 +708,6 @@ h9{
   margin-top: 80px;
   font-size: 20px;
  font-weight: 900; 
- position: absolute;
 }
 
 
@@ -722,7 +729,6 @@ h9{
   margin-top: -45px;
   font-size: 18px;
  font-weight: 900; 
- position: absolute;
 }
 
 
@@ -836,9 +842,13 @@ footer{
     flex-wrap: nowrap; /* Desktop style */
     flex-direction: row; /* Organisation horizontale */
   }
+
+  .Rechercher .search-icon{
+    display: none;
+  }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
   .hp {
     
@@ -847,7 +857,7 @@ footer{
   }
 
 .Rechercher{
-  padding-right: 5%;
+  padding-right: 2%;
 }
   .hotel1{
     width: 94%;
@@ -863,6 +873,13 @@ footer{
     width: 40%;
     
   }
+
+  .hp {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 3%;
+    width: 100%;
+}
 
   h5 {
     margin-left: 19px;
@@ -881,6 +898,16 @@ footer{
   font-size: 12px;
   }
 
+  input {
+    height: 35px;
+    width: 195px;
+    border: 1px solid #d9d9d9;
+    color: black;
+    margin-left: 5.7%;
+    padding: 21px 15px;
+    border-radius: 0%;
+}
+
   .etoile {
     margin-top: 44px;
     margin-left: 12%;
@@ -895,6 +922,29 @@ footer{
 
   }
 
+  .search-icon{
+    display: none;
+  }
+
+  .filtres-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5%;
+    gap: 3px;
+    margin-top: -2%;
+
+}
+
+.filtres:hover{
+  background-color: #DEEBFF;
+}
+
+  .article{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
   .container-soleil {
     display: flex;
     flex-direction: row;
@@ -906,7 +956,7 @@ footer{
 }
 
   .populaire{
-    width: 97%;
+    width: 94%;
     padding-bottom: 2%;
     
   }
@@ -977,13 +1027,16 @@ footer{
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
+
   body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Supprime le débordement horizontal */
-    width: 100vw; /* Assure que le corps occupe toute la largeur de l'écran */
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    max-width: 480px; /* Largeur maximale pour les mobiles */
+    box-sizing: border-box;
+    padding: 0 10px; /* Espacement pour les bords */
   }
+  
   
   .header {
     display: flex;
@@ -1007,16 +1060,23 @@ footer{
     display: flex;
     justify-content: end; /* Centre les éléments */
     margin-top: 5%;
+    width: 100%;
 
   }
 
   .heta {
     list-style: none;
     display: flex;
-    gap: 44px;
+    gap: 0;
     padding: 0;
     margin: 0;
-    margin-right: 15%;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .heta li {
+    width: 100%;
+    text-align: center;
   }
 
   .nav-link {
@@ -1025,32 +1085,28 @@ footer{
     font-weight: bold;
     font-size: 16px;
     padding: 5px 10px; /* Espacement pour rendre les liens cliquables */
-    position: relative; /* Pour placer le pseudo-élément */
     
   }
 
   .hebergements {
+    display: block;
     margin-left: 0; /* Ajustement si nécessaire */
     color: #333;
         text-decoration: none;
         padding: 14px;
         width: 100%;
         border-bottom: 2px solid #F2F2F2;
-        right: 26%;
-        padding-right: 42%;
         font-weight: 400;
   }
   
   .Activités {
+    display: block;
     margin-left: 0;
     color: #333;
     text-decoration: none;
     padding: 14px;
     width: 100%;
     border-bottom: 2px solid #F2F2F2;
-    padding-left: 79%;
-    padding-right: 131%;
-    left: -37%;
     font-weight: 400;
 }
 
@@ -1063,6 +1119,19 @@ footer{
     margin-right: 5%;
     margin-left: 4.5%;
 
+}
+
+.blanche {
+  margin-left: 73px;
+  margin-top: -18px;
+  color: #d9d9d9;
+}
+
+.etoile3 {
+  margin-left: 15px;
+  margin-top: -12px;
+  margin-bottom: 0px;
+  color: #0065fc;
 }
 
   .titre1 {
@@ -1087,23 +1156,23 @@ footer{
   justify-content: left;
   margin-left: 5%;
   border-bottom: 70px;
-  padding: 0px;
   padding-left: 13px;
   background-color: #F2F2F2;
   padding-right: 8%;
   padding-top: 10px;
-  margin-top: 6%;
+  margin-top: 2%;
 
 }
   
 input {
-  position: relative;
-  height: 45px;
-  width: 245px;
+  height: 50px;
+  width: 283px;
   border: 1px solid #d9d9d9;
   margin-top: -10.4px;
   color: black;
-  left: -2.5%;
+  margin-left: -1%;
+  border-top-right-radius: 19px;
+        border-bottom-right-radius: 19px;
 }
 
 .button {
@@ -1118,32 +1187,35 @@ input {
   border: none;
   font-size: 17px;
   opacity: 0;
+  display: none;
 }
 
 
 .icon{
-  margin-top: 3px;
+  margin-top: -8px;
+
 }
 
 .search-icon{
   
     background-color: #0065fc;
     padding: 15px;
-      padding-bottom: 12px;
+      padding-bottom: 17px;
       color: white;
       margin-top: -10px;
       border-radius: 12px;
+      right: 45px;
       position: relative;
-      right: 25px;
+
+      
 }
 
 
 .filtres-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour la deuxième et troisième ligne */
-  gap: 20px; /* Espacement entre les éléments */
   padding: 20px;
-  margin-left: 0.5%;
+  margin-left: -1.5%;
   margin-top: -17px;
 }
 
@@ -1174,19 +1246,12 @@ input {
   color: #007bff; /* Couleur de l'icône (bleu pour le style général) */
 }
 
-/* Effet au survol (hover) */
-.filtres:hover {
-  background-color: #f0f0f0; /* Change la couleur de fond au survol */
-  border-color: #007bff; /* Change la couleur de bordure au survol */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
-  transform: scale(1.05); /* Légère mise en avant */
+.filtres:hover{
+  background-color: #DEEBFF;
 }
 
-/* Bouton spécifique pour le filtre actif */
-.filtres.active {
-  background-color: #e6f7ff; /* Fond bleu clair pour le bouton actif */
-  border-color: #007bff; /* Bordure bleue */
-  color: #007bff; /* Texte bleu */
+.Rechercher .fa-location-dot {
+  margin-left: 14%;
 }
 
 .fa-person{
@@ -1203,6 +1268,7 @@ input {
   flex-direction: column-reverse;
        margin-left: -5%;
        margin-top: 5%;
+       
     }
 
 
@@ -1227,10 +1293,9 @@ input {
 .hotel1 {
   margin-left: 0;
   padding: 10px;
-  padding-bottom: 52px;
   border-radius: 20px;
   flex-direction: row;
-  width: 100%;
+  width: 101%;
   padding-top: 4%;
   background: white;
   border: 0px solid white;
@@ -1261,7 +1326,7 @@ input {
 
 
 .photo2 {
-  width: 91%;
+  width: 98%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   margin-left: 3.5%;
   margin-right: 5.5%;
@@ -1269,13 +1334,12 @@ input {
 .afficher {
   margin-left: 35px;
   margin-top: 23px;
-  position: absolute;
   font-size: 17px;
   font-weight: bold;
 }
 
 .Activites{
-  margin-top: -17%;
+  margin-top: -30%;
 }
 
 .containerActivite {
@@ -1303,7 +1367,7 @@ a.activite {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 35%;
+  margin-left: 30%;
 }
 .fa-chart-line{
   color: #0065fc;
@@ -1325,9 +1389,4 @@ footer {
   border-top: none;
   text-decoration: none;
 }
-
-
-
-
-
 }
