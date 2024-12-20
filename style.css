@@ -287,7 +287,7 @@ h4{
 
 
 .hotel1{
-  margin-left: 2.5;
+  
   padding: 10px;
   border-radius: 20px;
   border: 1px solid #F2F2F2;
@@ -870,7 +870,7 @@ footer{
   }
 
   .container-soleil > a {
-    width: 40%;
+    width: 33%;
     
   }
 
@@ -923,7 +923,7 @@ footer{
   }
 
   .search-icon{
-    display: none;
+    display: none !important;
   }
 
   .filtres-container {
@@ -1005,6 +1005,12 @@ footer{
 
 }
 
+.icone {
+  display: flex
+;
+  flex-direction: row;
+  gap: 10px;
+}
 
 
 .charte{
@@ -1027,7 +1033,7 @@ footer{
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
   body {
     font-family: 'Raleway', sans-serif;
@@ -1211,17 +1217,7 @@ input {
 }
 
 
-.filtres-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour la deuxième et troisième ligne */
-  padding: 20px;
-  margin-left: -1.5%;
-  margin-top: -17px;
-}
 
-.filtres-container article:first-child {
-  grid-column: span 2; /* Occupe toute la largeur de la première ligne */
-}
 /* Lien de chaque filtre */
 .filtres {
   display: flex;
