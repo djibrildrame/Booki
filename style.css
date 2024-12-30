@@ -136,6 +136,7 @@ input {
     margin-left: 2.5%;
     gap: 10px;
     margin-top: 3%;
+    font-weight: 900;
    
 }
 
@@ -147,21 +148,19 @@ input {
   background-color: #DEEBFF;
 }
 
-  .filtres {
-    display: flex;
-    align-items: center; /* Aligne les icônes et le texte verticalement */
-    justify-content: center; /* Centre le contenu horizontalement */
-    gap: 10px; /* Espacement entre icône et texte */
-    border: 2px solid #d9d9d9;
-    border-radius: 30px;
-    padding: 13px 69px;
-    max-width: 110px; /* Limite la largeur maximum */
-    width: auto; /* Ajuste à la taille du contenu */
-    background-color: white;
-    text-align: center;
-    color: #000000;
-
-  }
+.filtres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  border: 2px solid #d9d9d9;
+  border-radius: 30px;
+  padding: 12px 13px;
+  width: auto;
+  background-color: white;
+  text-align: center;
+  color: #000000;
+}
 
   .article{
     display: flex;
@@ -185,6 +184,10 @@ input {
   margin-top: -13px;
   color: #d9d9d9;
  
+}
+
+.ecomoney{
+  margin-left: -5%;
 }
 
 
@@ -238,16 +241,16 @@ h5:hover{
 }
 
 
-.fa-info{
-  margin-top: 1.5cm;
+.fa-info {
+  margin-top: 30px;
   margin-left: 40px;
   font-size: 12px;
   padding: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 6px;
-  padding-left: 6px;
-  border: 0.5px solid #d9d9d9;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border: 1px solid #d9d9d9;
   border-radius: 50%;
   color: #0065fc;
   font-family: 'anton', sans-serif;
@@ -256,7 +259,7 @@ h5:hover{
 h3{
   font-size: 14px;
   margin-left: 7px;
- margin-top: 62px
+ margin-top: 36px
 }
 
 
@@ -531,6 +534,7 @@ margin-top:30px;
   margin-left: 2.5%;
   gap: 25px;
   flex-wrap: nowrap; /* Empêche le wrap pour le desktop */
+  margin-top:2%
  
   
  
@@ -1434,5 +1438,25 @@ footer {
   margin-left: 2.5%;
   gap: 10px;
   margin-top: 3%;
+}
+h3 {
+  font-size: 14px;
+  margin-left: 7px;
+  margin-top: 64px;
+}
+
+.fa-info {
+  margin-top: 67px;
+  margin-left: 34px;
+  font-size: 12px;
+  padding: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  color: #0065fc;
+  font-family: 'anton', sans-serif;
 }
 }
