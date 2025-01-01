@@ -488,7 +488,7 @@ background-color: white;
 }
 
 .blanc {
-  height: 146px; /* Fixe une hauteur uniforme */
+  height: 128px; /* Fixe une hauteur uniforme */
   width: 123px; /* S'assure que l'image occupe toute la largeur du conteneur */
   border-radius: 20px; /* Ajoute des coins arrondis */
   object-fit: cover; /* Remplit le conteneur sans déformer l'image */
@@ -1092,6 +1092,10 @@ footer{
 ;
   flex-direction: row;
   gap: 10px;
+}
+
+.blanc{
+  width: 85px;
 }
 
 
