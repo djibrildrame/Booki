@@ -1,6 +1,7 @@
 html,
 body {
   font-family: raleway;
+  margin: 0 auto;
 
 }
 
@@ -12,17 +13,48 @@ a{
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a {
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  padding: 20px;
+  display: block;
+}
+
+header ul li a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  text-decoration: none;
+  padding: 20px;
+}
+
 /*head*/
 .logo {
-  height: 35px;
   margin-left: 30px;
+  width: 62px;
 }
 .heta {
   display: flex;
   flex-direction: row;
   justify-content: right;
   list-style-type: none;
-  margin-top: -20px;
 }
 
 .Activités:hover, .hebergements:hover{
@@ -80,7 +112,6 @@ h1 {
   align-items: center;
   max-width: 44px; /* Fixez une largeur maximale adaptée */
   margin-left: 2%;
-  border: 1px solid #ddd; /* Ligne pour délimiter */
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: #F2F2F2;
@@ -114,7 +145,7 @@ h1 {
 input {
   height: 35px;
   width: 195px;
-  border:1px solid #d9d9d9;
+  border:1px solid #F2F2F2;
   color: black;
   margin-left: 5.7%;
   padding: 21px 15px;
@@ -202,10 +233,6 @@ h5{
   font-weight: bold;
 }
 
-h5:hover{
-  color: #0065fc;
-}
-
 .h5{
   text-decoration: none;
   color: black;
@@ -222,11 +249,6 @@ h5:hover{
 
 #dame {
   margin-left: 90px;
-}
-
-.h5:hover{
-  color: #0065fc;
-
 }
 
 h5:hover{
@@ -252,6 +274,9 @@ h5:hover{
   padding-left: 8px;
   border: 1px solid #d9d9d9;
   border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  line-height: 8px;
   color: #0065fc;
   font-family: 'anton', sans-serif;
 }
@@ -262,7 +287,9 @@ h3{
  margin-top: 36px
 }
 
-
+.grey {
+  color: #d9d9d9;
+}
 .logement {
 display: flex;
 justify-content: left;
@@ -326,7 +353,7 @@ margin-top: 20px;
 }
 
 .photo1{
-height: 110PX;
+height: 124PX;
 width: 205px;
 border-radius: 15px;
 padding-bottom: 0px;
@@ -461,8 +488,8 @@ background-color: white;
 }
 
 .blanc {
-  height: 120px; /* Fixe une hauteur uniforme */
-  width: 90px; /* S'assure que l'image occupe toute la largeur du conteneur */
+  height: 146px; /* Fixe une hauteur uniforme */
+  width: 123px; /* S'assure que l'image occupe toute la largeur du conteneur */
   border-radius: 20px; /* Ajoute des coins arrondis */
   object-fit: cover; /* Remplit le conteneur sans déformer l'image */
   display: block; /* Assure que l'image est traitée comme un bloc */
@@ -477,10 +504,7 @@ background-color: white;
   display: flex;
   background-color: white;
   padding: 5px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 20px;
 
   
 }
@@ -488,6 +512,7 @@ background-color: white;
 .textpop{
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       
 }
 
@@ -588,17 +613,10 @@ margin-right: -135px;
  font-weight: bold;
 }
 
-.afficher:hover{
-  color: #0065fc;
-}
 
 .p {
   color: #000000;
 
-}
-
-p:hover{
-  color: #0065fc;
 }
 
 .nuit {
@@ -653,7 +671,6 @@ h8{
 .titremarseille {
   font-size: 20px;
   margin-left: 30px;
-  margin-left: 72px;
 }
 
 /**************/
@@ -693,12 +710,6 @@ color: #000000;
 
 }
 
-
-.act:hover{
-  color: #0065fc;
-
-
-}
 
 #fort{
 font-size: 14px;
@@ -874,6 +885,10 @@ footer{
     margin-bottom:4%
 }
 
+.textpop div{
+  padding-right: 9px;
+}
+
 .titremarseille {
   font-size: 20px;
   margin-left: 30px;
@@ -882,6 +897,10 @@ footer{
 
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   .hp {
     
@@ -891,11 +910,15 @@ footer{
 
 .Rechercher{
   padding-right: 2%;
+  margin-left: 30px;
 }
   .hotel1{
-    width: 94%;
+    width: 100%;
   }
 
+  .titre1 {
+    padding-top: 20px;
+  }
   .populaire{
     display: flex;
     flex-direction: column;
@@ -907,11 +930,18 @@ footer{
     
   }
 
+  .textpop {
+    width: 70%;
+  }
+  .textpop div {
+    padding-right: 9px;
+  }
+
   .hp {
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 3%;
-    width: 100%;
+    padding: 20px;
+    margin: 0;
 }
 
   h5 {
@@ -924,6 +954,11 @@ footer{
     font-weight: bold;
    }
 
+  .soleil h5{
+    margin: 0;
+    padding: 8px;
+  }
+
 .nuit {
   margin-left: 14%;
   color: #000000;
@@ -931,10 +966,15 @@ footer{
   font-size: 12px;
   }
 
+  .soleil .nuit {
+    margin: 0;
+    padding: 0 8px;
+  }
+
   input {
     height: 35px;
     width: 195px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #F2F2F2;
     color: black;
     margin-left: 5.7%;
     padding: 21px 15px;
@@ -943,7 +983,7 @@ footer{
 
   .etoile {
     margin-top: 44px;
-    margin-left: 12%;
+    margin-left: 8px;
     color: #0065fc;
 }
 
@@ -962,7 +1002,7 @@ footer{
   .filtres-container {
     display: flex;
     flex-direction: column;
-    margin-left: 2.5%;
+    margin-left: 30px;
     gap: 3px;
     margin-top: -2%;
 
@@ -989,7 +1029,7 @@ footer{
 }
 
   .populaire{
-    width: 94%;
+    width: 100%;
     padding-bottom: 2%;
     
   }
@@ -1019,11 +1059,21 @@ footer{
   display: flex;
   flex-direction: column; /* Permet un alignement vertical dans chaque carte */
   justify-content: space-between; /* Espace entre image et texte */
-  width: 200px; /* Largeur uniforme des cartes */
   background: #ffffff; /* Fond blanc */
-  overflow: hidden; /* Cache tout dépassement */
 }
 
+.titremarseille {
+  margin-left: 40px;
+}
+
+.containerActivite {
+  padding: 20px 0;
+}
+.marseilleact {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
 .activite img {
   width: 100%;
   height: 200px; /* Hauteur uniforme pour toutes les images */
@@ -1074,28 +1124,42 @@ footer{
 
   body {
     font-family: 'Raleway', sans-serif;
-    margin: 0 auto;
-    max-width: 480px; /* Largeur maximale pour les mobiles */
+    margin: 0;
     box-sizing: border-box;
-    padding: 0 10px; /* Espacement pour les bords */
+    padding: 0; /* Espacement pour les bords */
   }
   
   
-  .header {
+  header {
     display: flex;
     flex-direction: column; /* Empile verticalement */
     align-items: center; /* Centrer le contenu horizontalement */
     padding: 10px 0; /* Espacement global */
-  }
-  
-  .logo-container {
-    margin-bottom: 10px; /* Espacement entre le logo et la navigation */
-    margin-right: 12%;
-  }
-  
+  } 
+
   .logo {
-    height: 25px; /* Ajustez la taille du logo selon vos besoins */
-    width: auto;
+    margin-left: 0px;
+  }
+
+  header ul {
+    width: 100%;
+    gap: 0;
+  }
+
+  header ul li {
+    width: 100%;
+  } 
+
+  header ul li a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #F2F2F2;
+    border-top: none;
+  }
+  
+  header ul li a:hover {
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
   }
   
   .navigation {
@@ -1155,12 +1219,9 @@ footer{
 
   h1 {
     font-size: 23px;
-    margin-bottom: 30px;
-    margin-left: 2.5%;
     font-family: "Raleway", sans-serif;
-    margin-top: 5%;
-    margin-right: 5%;
-    margin-left: 4.5%;
+    padding: 20px;
+    margin: 0;
 
 }
 
@@ -1186,12 +1247,12 @@ footer{
 }
 
   .nature {
-    margin-top: -24px;
-    margin-left: 4.5%;
+    margin: 0;
+    padding: 0 20px 20px 20px;
 }
 
 .soleil{
-  margin-left: 3.5%;
+  margin: 0;
 }
 
 .Rechercher {
@@ -1210,7 +1271,7 @@ footer{
 input {
   height: 50px;
   width: 283px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #F2F2F2;
   margin-top: -10.4px;
   color: black;
   margin-left: -1%;
@@ -1253,7 +1314,11 @@ input {
       
 }
 
-
+footer {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+}
 
 /* Lien de chaque filtre */
 .filtres {
@@ -1299,8 +1364,7 @@ input {
 .hp{
   display: flex;
   flex-direction: column-reverse;
-       margin-left: -5%;
-       margin-top: 5%;
+  margin: 0;
        
     }
 
@@ -1325,10 +1389,10 @@ input {
 
 .hotel1 {
   margin-left: 0;
-  padding: 10px;
+  padding: 20px;
   border-radius: 20px;
   flex-direction: row;
-  width: 101%;
+  width: 100%;
   padding-top: 4%;
   background: white;
   border: 0px solid white;
@@ -1338,8 +1402,8 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 2%;
-  margin-right: 14px;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 20px;
   gap: 12px;
  
@@ -1350,8 +1414,8 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 2%;
-  margin-right: 14px;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 20px;
   gap: 12px;
  
@@ -1359,10 +1423,11 @@ input {
 
 
 .photo2 {
-  width: 98%;
+  width: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  margin-left: 3.5%;
-  margin-right: 5.5%;
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .afficher {
   margin-left: 35px;
@@ -1382,8 +1447,7 @@ input {
   flex-wrap: wrap;
   padding: 20px;
   flex-direction: column;
-  margin-left: 3%;
-    margin-right: 3%
+  margin: 0;
 }
 
 a.activite {
@@ -1400,21 +1464,22 @@ a.activite {
 
 .charte{
   display: flex;
+  margin: 0;
+  padding: 0;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 35%;
+}
+
+.propos {
+  margin-left: 0;
 }
 .fa-chart-line{
   color: #0065fc;
   font-size: 20px;
-  margin-left: 51%;
 
 }
 
 footer {
   background-color: #F2F2F2;
-  margin-left: -10px;
-  margin-right: -9px;
   margin-top: 10%;
 }
 
@@ -1428,16 +1493,16 @@ footer {
 .icone{
   
     display: grid;
-    grid-template-columns: 45% 50%;
-    gap: 8%;
+    grid-template-columns: 47% 47%;
+    gap: 16px;
 }
 
 .filtres-container {
   display: flex;
   flex-direction: column;
-  margin-left: 2.5%;
   gap: 10px;
-  margin-top: 3%;
+  margin: 0;
+  padding: 20px;
 }
 h3 {
   font-size: 14px;
@@ -1447,7 +1512,6 @@ h3 {
 
 .fa-info {
   margin-top: 67px;
-  margin-left: 34px;
   font-size: 12px;
   padding: 5px;
   padding-top: 6px;
@@ -1459,4 +1523,16 @@ h3 {
   color: #0065fc;
   font-family: 'anton', sans-serif;
 }
+}
+
+@media screen and (max-width: 340px) {
+  input {
+    width: 230px;
+  }
+
+  .filtres {
+    min-width: 100px;
+    font-size: 12px;
+  }
+  
 }
