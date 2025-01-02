@@ -469,7 +469,7 @@ background-color: white;
   background-color:#F2F2F2;
   border-radius: 20px;
   padding-bottom:0px;
-  width: 30%;
+  
   display: flex;
   flex-direction: column;
 
@@ -488,8 +488,8 @@ background-color: white;
 }
 
 .blanc {
-  height: 128px; /* Fixe une hauteur uniforme */
-  width: 123px; /* S'assure que l'image occupe toute la largeur du conteneur */
+  height: 125px; /* Fixe une hauteur uniforme */
+  width: 100px; /* S'assure que l'image occupe toute la largeur du conteneur */
   border-radius: 20px; /* Ajoute des coins arrondis */
   object-fit: cover; /* Remplit le conteneur sans déformer l'image */
   display: block; /* Assure que l'image est traitée comme un bloc */
@@ -611,6 +611,10 @@ margin-right: -135px;
  margin-top: 38px;
  font-size: 17px;
  font-weight: bold;
+}
+
+.afficher:hover{
+  color: #0065fc;
 }
 
 
@@ -991,7 +995,7 @@ footer{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
-    width: 95%;
+    width: 96%;
 
   }
 
@@ -1024,7 +1028,7 @@ footer{
     padding-left: 15px;
     padding-right: 15px;
     margin-top: -1%;
-    gap: 10px;
+    gap: 9px;
     padding-bottom: 2%;
 }
 
