@@ -2,6 +2,7 @@ html,
 body {
   font-family: raleway;
   margin: 0 auto;
+  max-width: 1440px;
 
 }
 
@@ -13,13 +14,13 @@ a{
   text-decoration: none;
 }
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header ul {
+nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +30,7 @@ header ul {
   padding: 0;
 }
 
-header ul li a {
+nav ul li a {
   color: #000000;
   font-size: 16px;
   text-decoration: none;
@@ -38,7 +39,7 @@ header ul li a {
   display: block;
 }
 
-header ul li a:hover {
+nav ul li a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
   text-decoration: none;
@@ -1138,7 +1139,7 @@ footer{
   }
   
   
-  header {
+  nav {
     display: flex;
     flex-direction: column; /* Empile verticalement */
     align-items: center; /* Centrer le contenu horizontalement */
@@ -1149,23 +1150,23 @@ footer{
     margin-left: 0px;
   }
 
-  header ul {
+  nav ul {
     width: 100%;
     gap: 0;
   }
 
-  header ul li {
+  nav ul li {
     width: 100%;
   } 
 
-  header ul li a {
+  nav ul li a {
     width: 100%;
     text-align: center;
     border-bottom: 2px solid #F2F2F2;
     border-top: none;
   }
   
-  header ul li a:hover {
+  nav ul li a:hover {
     border-bottom: 2px solid #0065fc;
     border-top: none;
   }
